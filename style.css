@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+:root {
+    --color-bg: #0d0d0d;
+    --color-neon: #ff00ff;
+    --color-neon-hover: #00ffff;
+    --color-text: #f2f2f2;
+    --color-glow: rgba(255, 0, 255, 0.8);
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.main-content {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px var(--color-neon);
+}
+
+/* Encabezado */
+.main-title {
+    font-size: 36px;
+    color: var(--color-neon);
+    text-shadow: 0px 0px 10px var(--color-neon);
+}
+
+/* Sección de entrada */
+.input-section {
+    margin-top: 20px;
+}
+
+.input-name {
+    padding: 10px;
+    border: 2px solid var(--color-neon);
+    background: transparent;
+    color: var(--color-text);
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    width: 60%;
+    border-radius: 5px;
+}
+
+/* Botones Cyberpunk */
+.button-neon {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: var(--color-text);
+    background: none;
+    border: 3px solid var(--color-neon);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 8px var(--color-glow);
+}
+
+.button-neon:hover {
+    border-color: var(--color-neon-hover);
+    box-shadow: 0px 0px 15px var(--color-neon-hover);
+    color: var(--color-neon-hover);
+}
+
+/* Lista de participantes */
+.name-list {
+    margin-top: 15px;
+    list-style: none;
+}
+
+.name-list li {
+    font-size: 18px;
+    color: var(--color-neon-hover);
+    text-shadow: 0px 0px 8px var(--color-neon-hover);
+}
+
+/* Resultado con efecto neón */
+.result-list {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--color-neon);
+    text-shadow: 0px 0px 15px var(--color-neon);
+}
+
+/* Ganador con animación */
+.ganador-neon {
+    font-size: 28px;
+    font-weight: bold;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0px 0px 10px var(--color-neon);
+    }
+    to {
+        text-shadow: 0px 0px 20px var(--color-neon-hover);
+    }
+}

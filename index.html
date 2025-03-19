@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto Cyberpunk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main-content">
+        <header class="header-banner">
+            <h1 class="main-title">🎭 Amigo Secreto Cyberpunk 🎭</h1>
+            <p class="parrafo"><strong>¡Bienvenido!</strong> Añade nombres y selecciona un ganador al azar.</p>
+        </header>
+        
+        <section class="input-section">
+            <h2 class="section-title">➤ Agregar Participantes</h2>
+            <div class="input-wrapper">
+                <input type="text" id="nombre" class="input-name" placeholder="Escribe un nombre">
+                <button id="agregar" class="button-neon">Añadir</button>
+            </div>
+            
+            <h3>🎴 Participantes:</h3>
+            <ul id="listaNombres" class="name-list"></ul>
+            
+            <div class="button-container">
+                <button id="sortear" class="button-neon">🎲 Sortear Un Amigo</button>
+            </div>
+            
+            <h3>🏆 Ganador:</h3>
+            <ul id="resultado" class="result-list"></ul>
+        </section>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
+
